@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 
 const Videos = () => {
   const videosArr = [
-    'REACT_APP_SAMPLE_VIDEO_1',
-    'REACT_APP_SAMPLE_VIDEO_2',
-    'REACT_APP_SAMPLE_VIDEO_3',
-    'REACT_APP_SAMPLE_VIDEO_4',
-    'REACT_APP_SAMPLE_VIDEO_5',
-    'REACT_APP_SAMPLE_VIDEO_6',
-    'REACT_APP_SAMPLE_VIDEO_7',
+    process.env.REACT_APP_SAMPLE_VIDEO_1 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_2 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_3 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_4 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_5 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_6 || "",
+    process.env.REACT_APP_SAMPLE_VIDEO_7 || "",
   ];
 
   const [videoSrc, setVideoSrc] = useState(videosArr[0]);
